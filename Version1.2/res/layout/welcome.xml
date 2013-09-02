@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget32"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+
+     <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="5.使用时，用任何一部手机发送密码到装有该软件的目标手机即可实现未读短信的转发功能，发送qxsms或者QXSMS指令停止转发功能，再次开启前，请确保已经发送过取消指令，以此来避免短信的重复转发。"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_marginBottom="10dp"
+        android:text="4.建议定期修改密码，防止密码泄漏。"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_marginBottom="10dp"
+        android:text="3.查询选项用于个人自定义查询，可以筛选特定号码发来的短信，并将短信转发到指定号码。"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_marginBottom="10dp"
+        android:text="2.首次使用时，请在设置选项中设置密码，并牢记密码。"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="10dp"
+        android:text=" 6.在使用过程中，如有任何疑问或建议，请通过邮箱angelstarln@126.com联系我们。"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="10dp"
+        android:text="7.感谢您的使用，欢迎提出宝贵的意见。"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginBottom="10dp"
+        android:text="1.请遵守相关道德和法律规范，严禁用于侵犯个人隐私。"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/setting"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/state_btnback_content"
+        android:text="设置"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/self"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/state_btnback_content"
+        android:text="查询"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/self"
+        android:layout_alignBottom="@+id/self"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/state_btnback_content"
+        android:text="网络" />
+
+</RelativeLayout>

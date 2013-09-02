@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MessageActivity!</string>
+    <string name="app_name">短信精灵</string>
+    <string name="setting">Setting</string>
+    <string name="autostart">AutoStart</string>
+    <string name="welcome">Welcome</string>
+    <string name="quicksendsms">SendSMS</string>
+    <string name="about">About</string>
+    <string name="cancel">Cancel</string>
+    <string name="network">netWork</string>
+
+</resources>

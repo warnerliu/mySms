@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入密码"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/state_btnback_content"
+        android:text="保存"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="原始密码"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新密码"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认新密码"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_selector"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/state_btnback_content"
+        android:text="确定" />
+
+</LinearLayout>

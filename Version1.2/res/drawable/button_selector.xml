@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    gradient渐变效果，startColor 是开始的颜色，endColor是最后的颜色 angle用来确定方向，0表示Left_Right 90是Bottom——Top 180是Right——Left
+    stroke 是来确定边框的 其中width 是表示宽度，color是边框的颜色 
+    corners 来确定每个角的半径，可以用 topLeftRadius 等来分别设置半径的大小，
+    Padding 用开确定里面内容的位置
+    -->
+
+    <item><shape>
+            <solid android:color="#2BD5B3" />
+
+            <gradient android:angle="0" android:endColor="#A8D324" android:startColor="#A8D324"></gradient>
+
+            <!-- 圆角 -->
+            <corners android:radius="10dp" />
+
+            <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />
+        </shape></item>
+
+</selector>

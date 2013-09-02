@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<!-- 按钮背景——按下有不同状态 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android"  >
+    
+    <!-- pressed -->
+    <item android:state_pressed="true"
+        android:drawable="@drawable/btnback_content_pressed"
+        />
+    
+    <!-- focused -->
+    <item android:state_focused="true"
+        android:drawable="@drawable/btnback_content"
+        />
+    
+    <!-- default -->
+    <item android:drawable="@drawable/btnback_content"
+        />
+       
+</selector>

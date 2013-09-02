@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/network"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/networktest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/state_btnback_content"
+        android:text="网络测试" />
+
+    <Button
+        android:id="@+id/sendsocket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/state_btnback_content"
+        android:text="socket通信" />
+
+    <TextView
+        android:id="@+id/showcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/networktest"
+        android:layout_below="@+id/networktest"
+        android:layout_marginTop="37dp"
+        android:maxLines="15"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="#FF0000" />
+
+</RelativeLayout>
+ 
+    
+    
+    

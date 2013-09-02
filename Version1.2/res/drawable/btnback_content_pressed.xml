@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>   
+<!-- 内容背景——按下时状态 -->   
+<shape xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:shape="rectangle"   
+    android:padding="8dip"
+    >
+    
+    <!-- 填充色 -->
+    <solid 
+        android:color="#2BD5B3"
+        />
+    <!-- 圆角半径 -->
+    <corners   
+        android:bottomRightRadius="8dip"   
+        android:bottomLeftRadius="8dip"   
+        android:topLeftRadius="8dip"   
+        android:topRightRadius="8dip"
+        />
+    <padding android:bottom="10dp" android:left="10dp" android:right="10dp" android:top="10dp" />   
+    
+</shape>  
